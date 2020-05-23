@@ -1,0 +1,32 @@
+{
+  "name": "fullstem",
+  "version": "0.1.0",
+  "description": "Simple text search reduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byronmurg/fullstem.git"
+  },
+  "keywords": [
+    "fulltext",
+    "search",
+    "stem",
+    "stopword",
+    "script"
+  ],
+  "author": "Byron Murgatroyd <fullstem@omanom.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byronmurg/fullstem/issues"
+  },
+  "homepage": "https://github.com/byronmurg/fullstem#readme",
+  "dependencies": {
+    "chinese-tokenizer": "^2.4.0",
+    "multilingual-stemmer": "^1.0.2",
+    "stopwords-json": "^1.2.0",
+    "xregexp": "^4.3.0"
+  }
+}
