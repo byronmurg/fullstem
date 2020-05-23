@@ -62,7 +62,7 @@ fullstem('நான் கடலோரப் பக்கத்தில் இ�
 - Korean*
 
 ## Multilingual Behaviour
-Fullstem works by splitting out individual character scripts and then processing each potental langauge for each match.
+Fullstem works by splitting out individual character scripts and then processing each potental language for each match.
 
 This can produce unexpected (but not unintended) behaviour in certain circumstances.
 
@@ -76,7 +76,7 @@ So you can see how multi-language sentences can be searched in either language, 
 
 Now consider Japanese kanji and Chinese han.
 
-If we use the Japanese sentence `国際の空港に飛行機を見た` roughly "I saw an airoplane at the international airport",
+If we use the Japanese sentence `国際の空港に飛行機を見た` roughly "I saw an aeroplane at the international airport",
 would give the result `["国","際","空","港","飛行","機","見"]` which is correct for a Japanese search but might yield interesting results for Mandarin searches. The exact cross-over depends on the context but ambiguity arises from the fact that many Japanese words are borrowed from Chinese but have archaic spellings.
 
 ## Korean
@@ -87,4 +87,4 @@ If you have any suggestions for improvement please get in touch or submit a merg
 languages used here so cannot know for sure their effectiveness.
 
 # Acknowledgements
-This software would not be possible without any of the fantastic work done in it's dependencies. Please check them out on the npm [dependecies page](https://www.npmjs.com/package/fullstem?activeTab=dependencies).
+This software would not be possible without any of the fantastic work done in it's dependencies. Please check them out on the npm [dependencies page](https://www.npmjs.com/package/fullstem?activeTab=dependencies).
