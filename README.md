@@ -1,5 +1,5 @@
 # fullstem
-A collection of search reduction libraries and methods
+Simple text search reduction
 
 ## Usage
 ```javascript
@@ -85,3 +85,6 @@ The stemmer is a work in progress. Current behaviour is to pull out any hangul w
 # Improvement
 If you have any suggestions for improvement please get in touch or submit a merge-request. I do not know many of the
 languages used here so cannot know for sure their effectiveness.
+
+# Acknowledgements
+This software would not be possible without any of the fantastic work done in it's dependencies. Please check them out on the npm [dependecies page](https://www.npmjs.com/package/fullstem?activeTab=dependencies).
