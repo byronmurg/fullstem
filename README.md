@@ -5,7 +5,7 @@ A collection of search reduction libraries and methods
 ```javascript
 const fullstem = require('fullstem')
 
-fullstem('My hotel in near that Straße sign')
+fullstem('My hotel is near that Straße sign')
 // [ 'hotel', 'straß', 'sig' ]
 
 fullstem("こにちは、アプリの作りはどうか？")
