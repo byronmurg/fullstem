@@ -23,3 +23,4 @@ logAndParse('நான் கடலோரப் பக்கத்தில் �
 
 logAndParse("I can't get enough ministrone soup")
 logAndParse("国際の空港に飛行機を見た")
+logAndParse("私の頭が痛い。")

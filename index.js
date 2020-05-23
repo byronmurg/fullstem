@@ -66,6 +66,9 @@ const charsets = [
 		name: "Han",
 		tokenizer: (word) => ChineseTokenizer(word).map(token => token.text),
 		match: XRegExp('\\p{Han}+', 'g'),
+		language: [
+			{ name: "Mandarin", stopwords: stopwordMap.zh },
+		]
 	},
 	{
 		name: "Hangul",
