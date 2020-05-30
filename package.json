@@ -1,6 +1,6 @@
 {
   "name": "fullstem",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple text search reduction",
   "main": "index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 const XRegExp = require('xregexp')
 const stopwords = require('stopwords-json/stopwords-all.json')
 const { Stemmer, Languages } = require('multilingual-stemmer')
-const ChineseTokenizer = require('chinese-tokenizer').loadFile(__dirname+'/node_modules/chinese-tokenizer/tests/cedict_ts.u8')
+const ChineseTokenizer = require('chinese-tokenizer').loadFile(__dirname+'/cedict_ts.u8')
 
 const stopwordMap = {}
 
@@ -90,7 +90,7 @@ function parse(string) {
 		if (! charsetMatch) return []
 
 		if (tokenizer)
-			charsetMatch = [].concat(charsetMatch.map(tokenizer))
+			charsetMatch = charsetMatch.map(tokenizer).flat()
 
 		for (const language of languages) {
 			const { stopwords } = language
@@ -111,11 +111,10 @@ function parse(string) {
 			return stem
 		})
 
-		return [].concat(...stems)
-
+		return stems.flat()
 	})
 
-	return [].concat(...charsetMatches)
+	return charsetMatches.flat()
 }
 
 module.exports = parse
